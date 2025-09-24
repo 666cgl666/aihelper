@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.mypy_cache/
+.pytest_cache/
+.python-version
+
+# Environments
+.venv/
+.env
+.env.local
+
+# Build
+build/
+dist/
+
+# IDE/editor
+.vscode/
+.idea/
+.DS_Store
+
+# Node
+node_modules/
+
+# Logs
+*.log
+

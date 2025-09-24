@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIHelper 前端</title>
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+      input, textarea { width: 100%; padding: .5rem; margin: .25rem 0 .75rem; }
+      button { padding: .5rem 1rem; }
+      .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+      pre { background: #f7f7f7; padding: .75rem; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <h1>AIHelper Demo</h1>
+
+    <div class="card">
+      <h2>文本对话</h2>
+      <textarea id="text-input" rows="3" placeholder="输入你的问题"></textarea>
+      <button id="send-text">发送</button>
+      <pre id="text-output"></pre>
+    </div>
+
+    <div class="card">
+      <h2>多模态对话（图片 URL）</h2>
+      <input id="vision-prompt" placeholder="描述你想让模型做什么" />
+      <input id="vision-image" placeholder="图片 URL，如 https://..." />
+      <button id="send-vision">发送</button>
+      <pre id="vision-output"></pre>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
