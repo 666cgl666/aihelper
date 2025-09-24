@@ -1,0 +1,27 @@
+[project]
+name = "aihelper"
+version = "0.1.0"
+description = "LangChain + FastAPI scaffold"
+authors = [
+    {name = "666cgl666",email = "1330682404@qq.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.117.1,<0.118.0)",
+    "uvicorn[standard] (>=0.37.0,<0.38.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pydantic (>=2.11.9,<3.0.0)",
+    "langchain-openai (>=0.3.33,<0.4.0)",
+    "langchain-core (>=0.3.76,<0.4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+package-mode = false
