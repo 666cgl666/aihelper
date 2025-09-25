@@ -4,6 +4,7 @@ __pycache__/
 *.pyo
 *.pyd
 *.so
+*.txt
 .mypy_cache/
 .pytest_cache/
 .python-version

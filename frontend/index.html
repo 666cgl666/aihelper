@@ -17,6 +17,7 @@
 
     <div class="card">
       <h2>文本对话</h2>
+      <label><input type="checkbox" id="rag-toggle" /> <span id="rag-toggle-label">让 RAG 参与普通对话</span></label>
       <textarea id="text-input" rows="3" placeholder="输入你的问题"></textarea>
       <button id="send-text">发送</button>
       <pre id="text-output"></pre>
@@ -28,6 +29,20 @@
       <input id="vision-image" placeholder="图片 URL，如 https://..." />
       <button id="send-vision">发送</button>
       <pre id="vision-output"></pre>
+    </div>
+
+    <div class="card">
+      <h2>RAG 文档索引</h2>
+      <button id="rag-reindex">重建索引（读取 local_docs/*.md）</button>
+      <pre id="rag-reindex-out"></pre>
+    </div>
+
+    <div class="card">
+      <h2>RAG 问答</h2>
+      <input id="rag-question" placeholder="输入你的问题（将基于本地文档检索）" />
+      <input id="rag-memoryid" placeholder="可选：memoryid（会话隔离）" />
+      <button id="rag-ask">检索并回答</button>
+      <pre id="rag-answer"></pre>
     </div>
 
     <script src="./main.js"></script>
